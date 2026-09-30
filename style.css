@@ -1,8 +1,12 @@
 @charset "utf-8";
 
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
 * {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: "Pretendard Variable", Pretendard, sans-serif;
 }
 
 li {
@@ -11,335 +15,56 @@ li {
 
 a {
     text-decoration: none;
-    color: #adadad;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-}
-
-#wrap {
+.wrap {
     position: relative;
-    width: 100%;
-
-}
-
-/* swiper-------------- */
-
-html,
-body {
-    position: relative;
-    height: 100%;
-}
-
-body {
-    color: #fff;
-    margin: 0;
-    padding: 0;
-}
-
-.swiper {
     width: 100%;
     height: 100%;
 }
 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #444;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.swiper-slide img {
-    display: block;
+.wrap video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
-
-.swiper-pagination {
-    display: inline-block;
-    text-align: right;
-}
-
-.swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-}
-
-.swiper-button-next {
-    top: 353px;
-    right: 30px;
-    color: #666666;
-}
-
-.swiper-button-prev {
-    top: 353px;
-    left: 30px;
-    color: #666666;
-}
-
-/* top---------------------------------------------------------- */
-
-.top {
-    position: relative;
-    width: 980px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 50px;
-}
-
-.top_nav {
-    position: absolute;
-    top: -32px;
-    right: -60px;
-    color: #adadad;
-    margin-right: 50px;
-
-}
-
-.top_nav ul {
-    justify-content: flex-end;
-}
-
-.top_nav ul li a {
-    font-size: 12px;
-}
-
-.top_nav ul li a i {
-    margin-left: 8px;
-}
-
 
 .logo {
-    position: relative;
-    left: -129px;
-    width: 250px;
-    display: flex;
-    align-items: center;
-
-}
-
-.logo a {
+    position: absolute;
+    right: 39px;
+    top: 28px;
     width: 100px;
-    margin-right: 50px;
+    z-index: 100;
 }
-
 .logo a img {
     width: 100%;
 }
 
-
-
-.login_button {
-    border: 1px solid #adadad;
-    border-radius: 3px;
-}
-
-.bottom_nav {
-    position: relative;
-    right: -120px;
-}
-
-.bottom_nav a {
-    color: #686767;
-}
-
-.login_button a {
-    padding: 10px;
-    color: #2325aa;
-    margin: 0;
-}
-
-nav ul {
-    display: flex;
-    align-items: center;
-}
-
-nav ul li {
-    margin-right: 20px;
-    color: #adadad;
-    font-size: 20px;
-}
-
-nav ul li div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 45px;
-    height: 45px;
-    background-color: rgb(202, 133, 5);
-    box-shadow: 1px 4px 15px 2px #ada9a9;
-}
-
-
-nav ul li div div {
-    background-color: #fff;
-    width: 20px;
-    height: 3px;
-}
-
-
-.swiper_wrap {
-    position: relative;
-    width: 980px;
-    height: 456px;
-    background-color: #b4b4b4;
-    margin-top: 20px;
-    overflow: visible;
-}
-
-
-.sld_button {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.visit {
     position: absolute;
-    bottom: 76px;
-    left: 26px;
-    width: 320px;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    width: 300px;
     height: 100px;
-    background-color: #e79604;
-    z-index: 100;
+    border: 3px solid #E9E6DC;
+    padding-left: 20px;
 }
 
-.swiper_wrap .sld_button a {
-    color: #fff;
-    font-size: 25px;
-    padding: 20px;
+.visit:hover a img {
+    transform: translateX(60px);
 }
 
-.swiper_wrap .sld_button a i {
-    color: #fff;
-    display: block;
-    font-size: 25px;
+.visit a {
+    position: relative;
+    color: #E9E6DC;
+    font-size: 35px;
+    padding: 50px;
 }
 
-.swiper-pagination {
-    left: -114px;
-}
-
-/* banner-------------------------------------------------------- */
-
-.banner {
-    width: 100%;
-    height: 237px;
-    margin-top: 20px;
-    background-color: #0076be;
-}
-
-.banner_inner {
-    width: 980px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.banner_left {
-    width: 60%;
-    padding: 40px 0;
-    font-size: 22px;
-    margin: 0;
-}
-
-.banner_left ul {
-    display: flex;
-    font-size: 16px;
-    margin-top: 27px;
-}
-
-
-.banner_left ul li a span {
-    display: inline-block;
-    width: 78px;
-    height: 78px;
-    background: url(./images/img_intro.png) no-repeat;
-}
-
-.banner_left ul li a span:nth-child(1) {
-    background-position: -402px -10px;
-}
-
-#wrap > main > div.banner > div > div.banner_left > ul > li:nth-child(2) > a > span {
-    background-position: -490px -10px;
-}
-
-#wrap > main > div.banner > div > div.banner_left > ul > li:nth-child(3) > a > span {
-    background-position: -578px -10px;
-}
-
-#wrap > main > div.banner > div > div.banner_left > ul > li:nth-child(4) > a > span {
-    background-position: -666px -10px;
-}
-
-#wrap > main > div.banner > div > div.banner_left > ul > li:nth-child(5) > a > span {
-    background-position: -754px -10px;
-}
-
-.banner_left ul li {
-    text-align: center;
-}
-
-.banner_left ul li a {
-    color: #fff;
-}
-
-.banner_right {
-    width: 325px;
-    height: 92px;
-}
-
-.banner_right img {
-    width: 100%;
-}
-
-
-/* sercice---------------------------------------------- */
-
-.service {
-    width: 980px;
-    height: 270px;
-    margin-top: 20px;
-    background-color: #535353;
-}
-
-
-/* recommand----------------------------------------------- */
-.recommand {
-    background-color: #f6fbfd;
-}
-
-.recommand_inner {
-    width: 980px;
-    height: 388px;
-}
-
-/* footer----------------------------------------------- */
-
-
-footer {
-    width: 100%;
-    height: 200px;
-    background-color: #6a6a6a;
-}
-
-
-.footer_top ul {
-    display: flex;
-}
-
-
-.footer_top ul li a {
-    color: #fff;
-    font-size: 13px;
-}
-
-
-.footer_inner {
-    width: 980px;
+.visit a img {
+    position: absolute;
+    width: 250px;
+    bottom: 6px;
+    right: -150px;
+    pointer-events: none;
+    transition: transform 0.2s ease;
 }
