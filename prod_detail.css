@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pretendard Variable", Pretendard, sans-serif;
+}
+
+body {
+    background: url(./images/paper_bg.png);
+    background-size: contain;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrap {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* fix--------------------------------------------------- */
+
+.top_fix {
+    position: fixed;
+    width: 80%;
+    top: 0;
+    padding: 40px 0 20px 0;
+    font-size: 30px;
+    color: #13322A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #13322A;
+}
+.center_line {
+    position: fixed;
+    top: 126px;
+    left: 50%;
+    width: 1px;
+    height: 78vh;
+    background-color: #13322A;
+}
+/* main---------------------------------------------------------- */
+.main {
+    padding-top: 160px;
+    width: 100%;
+}
+
+.main .left_area {
+    position: fixed;
+    top: 236px;
+    width: 50%;
+}
+
+.main .left_area img {
+    width: 76%;
+}
+
+.main .right_area {
+    width: 40%;
+    float: right;
+    color: #13322A;
+}
+
+.right_area .title {
+    font-size: 30px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #13322A;
+}
+
+.right_area .price {
+    padding-top: 54px;
+    display: block;
+}
+
+.right_area .text {
+    padding-top: 54px;
+    width: 70%;
+}
+
+.right_area img {
+    padding : 50px 0 30px 0;
+    width: 100%;
+}
