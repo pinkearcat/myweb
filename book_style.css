@@ -517,8 +517,57 @@ body {
 .story-text[data-page="8"] {
   left: 8%;
   right: 8%;
-  bottom: 7%;
-  color: #ececec;
+  top: 35%;
+  color: #f8edcf;
+}
+
+/* 9페이지 */
+.story-text[data-page="9"] {
+  left: 8%;
+  right: -17%;
+  top: 35%;
+}
+
+/* 10페이지 */
+.story-text[data-page="10"] {
+  left: 8%;
+  right: 8%;
+  top: 35%;
+}
+
+/* 11페이지 */
+.story-text[data-page="11"] {
+  left: 8%;
+  right: 8%;
+  top: 4%;
+}
+
+/* 12페이지 */
+.story-text[data-page="12"] {
+  left: 8%;
+  right: 8%;
+  top: 45%;
+}
+
+/* 13페이지 */
+.story-text[data-page="13"] {
+  left: 9%;
+  right: 8%;
+  top: 65%;
+}
+
+/* 14페이지 */
+.story-text[data-page="14"] {
+  left: 8%;
+  right: 8%;
+  top: 29%;
+}
+
+/* 15페이지 */
+.story-text[data-page="15"] {
+  left: 8%;
+  right: 8%;
+  bottom: 10%;
 }
 
 
