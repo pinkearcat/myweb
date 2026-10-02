@@ -542,8 +542,10 @@ body {
 
 .cover-title span:nth-child(5) {
   transform: rotateZ(0deg);
+  color: #E05D24;
 }
 
 .cover-title span:nth-child(6) {
   transform: rotateZ(17deg);
+  color: #E05D24;
 }
