@@ -144,3 +144,59 @@ body{min-height:100vh;font-family:Pretendard,"Noto Sans KR",sans-serif;color:#4b
   .arrow{font-size:16px;margin:0 2px}
   .dots{top:34px;gap:5px}.dots i{width:5px;height:5px}
 }
+
+
+/* 사용자 제공 동화책 폰트 */
+@font-face{
+  font-family:"GriunFromsol";
+  src:url("fonts/Griun_Fromsol-Rg.ttf") format("truetype");
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+
+/* 표지 제목: 각 글자를 개별적으로 수정 가능 */
+.cover-title{
+  position:absolute;
+  z-index:10;
+  top:18%;
+  left:50%;
+  transform:translateX(-50%);
+  margin:0;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  white-space:nowrap;
+  pointer-events:none;
+  font-family:"GriunFromsol",sans-serif;
+  font-size:42px;
+  font-weight:400;
+  color:#302b27;
+}
+.cover-title span{
+  display:inline-block;
+}
+/* 예: 개별 글자 위치/색상을 바꾸고 싶으면 아래처럼 사용
+.cover-title span:nth-child(1){ transform:rotate(-8deg) translateY(4px); }
+.cover-title span:nth-child(5){ color:#e65d28; }
+.cover-title span:nth-child(6){ color:#e65d28; }
+*/
+
+/* 각 페이지 본문 텍스트 영역 */
+.story-text{
+  position:absolute;
+  z-index:8;
+  left:8%;
+  right:8%;
+  bottom:7%;
+  margin:0;
+  padding:14px 18px;
+  font-family:"GriunFromsol",sans-serif;
+  font-size:22px;
+  line-height:1.55;
+  font-weight:400;
+  color:#302b27;
+  text-align:center;
+  white-space:pre-line;
+  pointer-events:none;
+}
