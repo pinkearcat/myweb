@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>미운 아기 오리</title>
+<link rel="stylesheet" href="./book_style.css">
+</head>
+<body>
+<main class="scene">
+  <section class="book-area">
+    <!-- 표지 -->
+    <div class="closed-book" id="closedBook">
+      <div class="cover-edge"></div>
+      <img src="images/cover.png" alt="미운 아기 오리 표지">
+    </div>
+
+    <!-- 펼친 책 -->
+    <div class="open-book" id="openBook">
+      <div class="leather-cover"></div>
+      <div class="page-stack left-stack"></div>
+      <div class="page-stack right-stack"></div>
+
+      <div class="pages">
+        <div class="page left">
+          <img id="leftPage" alt="">
+          <div class="edge-shadow left-shadow"></div>
+        </div>
+        <div class="page right">
+          <img id="rightPage" alt="">
+          <div class="edge-shadow right-shadow"></div>
+        </div>
+
+        <div class="center-fold"></div>
+
+        <div class="turn-page" id="turnPage">
+          <div class="turn-face front"><img id="turnFront" alt=""></div>
+          <div class="turn-face back"><img id="turnBack" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="controls">
+    <button class="paper-btn prev" id="prev" disabled><span class="arrow">←</span> 이전 페이지</button>
+
+    <div class="paper-count">
+      <span id="counter">표지</span>
+      <div class="dots" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+    </div>
+
+    <button class="paper-btn next" id="next">다음 페이지 <span class="arrow">→</span></button>
+  </nav>
+</main>
+<script src="book_script.js"></script>
+</body>
+</html>
