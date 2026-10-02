@@ -1,5 +1,5 @@
 const pages = Array.from({
-  length: 8
+  length: 15
 }, (_, i) => `images/page${String(i+1).padStart(2,"0")}.png`);
 
 // 각 페이지의 동화 문구를 여기에 입력하면 됩니다.
@@ -11,7 +11,14 @@ const pageTexts = [
   "날이 갈수록 아기 오리는 더 외로워졌어요. \n 아무도 자기와 함께 있으려 하지 않았거든요.", // 5페이지
   "“여기서는 아무도 날 좋아하지 않아.” \n 아기 오리는 홀로 농장을 떠났어요.", // 6페이지
   "탕! 탕! \n 총소리에 놀란 아기 오리는 몸을 꼭 숨겼어요.", // 7페이지
-  "노파의 오두막폭풍을 피해 작은 오두막을 발견했어요. \n “여기라면 편히 지낼 수 있을까?”" // 8페이지
+  "노파의 오두막폭풍을 피해 작은 오두막을 발견했어요. \n “여기라면 편히 지낼 수 있을까?”", // 8페이지
+  "“나는 넓은 물에서 헤엄치고 싶어.” \n 아기 오리는 다시 세상 밖으로 나갔어요.", // 9페이지
+  "어느 날, 눈부시게 하얀 새들이 하늘을 날아갔어요.\n“정말 아름답다…….”", // 10페이지
+  "추운 겨울이 찾아오자 호수가 꽁꽁 얼었어요. \n 아기 오리는 차가운 얼음 속에서 힘겹게 버텼지요.", // 11페이지
+  "길고 추운 겨울이 지나갔어요. \n 그리고 마침내 따뜻한 봄이 찾아왔답니다.", // 12페이지
+  "그때 아름다운 백조들이 나타났어요.\n“나도…… 저들에게 가 볼까?”",
+  "아기 오리가 고개를 숙이자 물 위에 모습이 비쳤어요. \n “어? 이게…… 나라고?”",
+  "아기 오리는 어느새 아름다운 백조가 되어 있었어요. \n “이렇게 행복한 날이 내게도 찾아왔구나.”"
 ];
 
 const closed = document.querySelector("#closedBook"),
@@ -35,7 +42,7 @@ function render() {
   if (isCover) {
     closed.classList.remove("hide");
     open.classList.remove("show");
-    counter.textContent = "1 / 9";
+    counter.textContent = "1 / 15";
     prev.disabled = true;
     next.disabled = false;
     return;
@@ -54,7 +61,7 @@ function render() {
   rightText.dataset.page = ri + 1;
   left.style.visibility = pageSrc(li) ? "visible" : "hidden";
   right.style.visibility = pageSrc(ri) ? "visible" : "hidden";
-  counter.textContent = `${Math.min(9,li+2)} / 9`;
+  counter.textContent = `${Math.min(15,li+2)} / 15`;
   prev.disabled = busy;
   next.disabled = busy || ri >= pages.length - 1;
 }
