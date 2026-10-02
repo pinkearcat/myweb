@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마지막 메시지</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section id="intro" class="screen active">
+      <div class="er-scene" aria-hidden="true">
+        <div class="ceiling-light"></div>
+        <div class="curtain curtain-left"></div>
+        <div class="curtain curtain-right"></div>
+        <div class="monitor">
+          <div class="monitor-top">PATIENT MONITOR</div>
+          <div class="ecg-window">
+            <svg class="ecg" viewBox="0 0 600 100" preserveAspectRatio="none">
+              <polyline points="0,55 70,55 90,55 105,15 120,88 138,42 154,55 230,55 250,55 265,15 280,88 298,42 314,55 390,55 410,55 425,15 440,88 458,42 474,55 550,55 600,55"/>
+            </svg>
+          </div>
+          <div class="monitor-numbers">
+            <div><small>HR</small><b class="hrValue">148</b></div>
+            <div><small>SpO₂</small><span class="spo2Value">87</span></div>
+          </div>
+        </div>
+        <div class="iv-pole"><i></i><div class="iv-bag"></div><div class="iv-line"></div></div>
+        <div class="bed-rail"></div>
+        <div class="blanket"></div>
+        <div class="vignette"></div>
+        <div class="flash"></div>
+      </div>
+
+      <div class="intro-content">
+        <div id="introTime" class="big-time">00 : 10 : 00</div>
+        <p id="introQuestion" class="intro-question">이게 뭘까요?</p>
+        <div id="warning" class="warning">
+          <p>
+            타이머가 종료되면 당신은 죽습니다.<br><br>
+            죽기 전 사랑하는 사람에게<br>
+            마지막 메시지를 보내세요.
+          </p>
+          <button id="goWrite" type="button">메시지 보내기</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="write" class="screen">
+
+      <div class="er-scene write-er" aria-hidden="true">
+        <div class="ceiling-light"></div>
+        <div class="curtain curtain-left"></div>
+        <div class="curtain curtain-right"></div>
+        <div class="monitor">
+          <div class="monitor-top">PATIENT MONITOR</div>
+          <div class="ecg-window">
+            <svg class="ecg" viewBox="0 0 600 100" preserveAspectRatio="none">
+              <polyline points="0,55 45,55 55,55 66,9 77,92 90,35 101,55 145,55 155,55 166,9 177,92 190,35 201,55 245,55 255,55 266,9 277,92 290,35 301,55 345,55 355,55 366,9 377,92 390,35 401,55 445,55 455,55 466,9 477,92 490,35 501,55 545,55 600,55"/>
+            </svg>
+          </div>
+          <div class="monitor-numbers">
+            <div><small>HR</small><b class="hrValue">148</b></div>
+            <div><small>SpO₂</small><span class="spo2Value">87</span></div>
+          </div>
+        </div>
+        <div class="iv-pole"><i></i><div class="iv-bag"></div><div class="iv-line"></div></div>
+        <div class="bed-rail"></div>
+        <div class="blanket"></div>
+        <div class="vignette"></div>
+        <div class="flash"></div>
+      </div>
+
+      <div class="write-content">
+      <header>
+        <div id="writeTime" class="time">00 : 09 : 57</div>
+        <p class="notice">*마지막으로 메시지를 보내세요</p>
+      </header>
+
+      <form id="messageForm">
+        <fieldset>
+          <legend>폰트를 선택해주세요.</legend>
+          <label class="font-option" for="fontDokdo"><input id="fontDokdo" type="radio" name="font" value="dokdo" checked><span>east-sea-dokdo</span></label>
+          <label class="font-option" for="fontNanum"><input id="fontNanum" type="radio" name="font" value="nanum"><span>nanum-pen-script</span></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>카드를 선택해주세요.</legend>
+          <div class="card-options">
+            <label><input type="radio" name="card" value="pink" checked><span class="swatch pink"></span></label>
+            <label><input type="radio" name="card" value="blue"><span class="swatch blue"></span></label>
+            <label><input type="radio" name="card" value="green"><span class="swatch green"></span></label>
+          </div>
+        </fieldset>
+
+        <div id="messageBox" class="message-box pink-card dokdo-font">
+          <label for="message">메시지 입력 영역</label>
+          <textarea id="message" maxlength="200" placeholder="마지막으로 전하고 싶은 말을 적어주세요."></textarea>
+        </div>
+
+        <div class="send-row">
+          <button type="submit">보내기</button>
+          <span id="sendTime">00 : 09 : 57</span>
+        </div>
+      </form>
+      </div>
+    </section>
+
+    <section id="complete" class="screen">
+      <div class="heaven-scene" aria-hidden="true">
+        <div class="heaven-sun"></div>
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+        <div class="cloud cloud-4"></div>
+        <div class="heaven-rays"></div>
+        <div class="heaven-glow"></div>
+      </div>
+
+      <div class="complete-content">
+        <p class="complete-title">발송이 완료되었습니다.</p>
+        <p class="complete-sub">당신의 마지막 마음이 전해졌습니다.</p>
+        <div id="resultCard" class="result-card pink-card dokdo-font">
+          <p id="resultMessage"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
