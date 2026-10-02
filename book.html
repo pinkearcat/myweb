@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>미운 아기 오리</title>
-<link rel="stylesheet" href="./book_style.css">
+<link rel="stylesheet" href="book_style.css">
 </head>
 <body>
 <main class="scene">
@@ -13,6 +13,9 @@
     <div class="closed-book" id="closedBook">
       <div class="cover-edge"></div>
       <img src="images/cover.png" alt="미운 아기 오리 표지">
+      <h1 class="cover-title" aria-label="미운 아기 오리">
+        <span>미</span><span>운</span><span>아</span><span>기</span><span>오</span><span>리</span>
+      </h1>
     </div>
 
     <!-- 펼친 책 -->
@@ -24,10 +27,12 @@
       <div class="pages">
         <div class="page left">
           <img id="leftPage" alt="">
+          <p class="story-text" id="leftText"></p>
           <div class="edge-shadow left-shadow"></div>
         </div>
         <div class="page right">
           <img id="rightPage" alt="">
+          <p class="story-text" id="rightText"></p>
           <div class="edge-shadow right-shadow"></div>
         </div>
 
