@@ -169,7 +169,7 @@ body{min-height:100vh;font-family:Pretendard,"Noto Sans KR",sans-serif;color:#4b
   white-space:nowrap;
   pointer-events:none;
   font-family:"GriunFromsol",sans-serif;
-  font-size:42px;
+  font-size: 64px;
   font-weight:400;
   color:#302b27;
 }
@@ -181,6 +181,26 @@ body{min-height:100vh;font-family:Pretendard,"Noto Sans KR",sans-serif;color:#4b
 .cover-title span:nth-child(5){ color:#e65d28; }
 .cover-title span:nth-child(6){ color:#e65d28; }
 */
+
+.cover-title span:nth-child(1) {
+  transform: rotateZ(333deg);
+}
+.cover-title span:nth-child(2) {
+  transform: rotateZ(7deg);
+}
+.cover-title span:nth-child(3) {
+  transform: rotateZ(353deg);
+}
+.cover-title span:nth-child(4) {
+  transform: rotateZ(11deg);
+}
+.cover-title span:nth-child(5) {
+  transform: rotateZ(0deg);
+}
+.cover-title span:nth-child(6) {
+  transform: rotateZ(17deg);
+}
+
 
 /* 각 페이지 본문 텍스트 영역 */
 .story-text{
@@ -200,3 +220,5 @@ body{min-height:100vh;font-family:Pretendard,"Noto Sans KR",sans-serif;color:#4b
   white-space:pre-line;
   pointer-events:none;
 }
+
+#leftText
