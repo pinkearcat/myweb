@@ -560,8 +560,8 @@ body {
 /* 14페이지 */
 .story-text[data-page="14"] {
   left: 8%;
-  right: 8%;
-  top: 16%;
+  right: -1%;
+  top: 10%;
 }
 
 /* 15페이지 */
