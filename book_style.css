@@ -450,9 +450,9 @@ body {
   margin: 0;
   padding: 14px 18px;
   font-family: "GriunFromsol", sans-serif;
-  font-size: 22px;
+  font-size: 21px;
   line-height: 1.55;
-  font-weight: 400;
+  font-weight: 500;
   color: #302b27;
   text-align: center;
   white-space: pre-line;
@@ -467,107 +467,109 @@ body {
 
 /* 1페이지 */
 .story-text[data-page="1"] {
-  right: -13%;
-  top: 5%;
+  right: -28%;
+  top: 2%;
 }
 
 /* 2페이지 */
 .story-text[data-page="2"] {
   left: 8%;
   right: 8%;
-  bottom: 7%;
+  bottom: 5%;
 }
 
 /* 3페이지 */
 .story-text[data-page="3"] {
   left: 30%;
-  right: 8%;
-  top: 22%;
+  right: -20%;
+  top: 5%;
 }
 
 /* 4페이지 */
 .story-text[data-page="4"] {
   left: 8%;
   right: 8%;
-  bottom: 4%;
+  bottom: 0%;
 }
 
 /* 5페이지 */
 .story-text[data-page="5"] {
   left: -16%;
-  right: 8%;
+  right: -2%;
   bottom: 35%;
 }
 
 /* 6페이지 */
 .story-text[data-page="6"] {
   left: -22%;
-  right: 8%;
+  right: -3%;
   bottom: 18%;
 }
 
 /* 7페이지 */
 .story-text[data-page="7"] {
   left: 8%;
-  right: -22%;
-  top: 43%;
+  right: -2%;
+  bottom: 37%;
 }
 
 /* 8페이지 */
 .story-text[data-page="8"] {
-  left: 8%;
-  right: 8%;
-  top: 35%;
+  left: -17%;
+  right: 5%;
+  top: 11%;
   color: #f8edcf;
 }
 
 /* 9페이지 */
 .story-text[data-page="9"] {
   left: 8%;
-  right: -17%;
-  top: 35%;
+  right: -6%;
+  top: 19%;
 }
 
 /* 10페이지 */
 .story-text[data-page="10"] {
   left: 8%;
   right: 8%;
-  top: 35%;
+  bottom: 2%;
+  text-align: right;
 }
 
 /* 11페이지 */
 .story-text[data-page="11"] {
   left: 8%;
   right: 8%;
-  top: 4%;
+  top: 8%;
 }
 
 /* 12페이지 */
 .story-text[data-page="12"] {
   left: 8%;
   right: 8%;
-  top: 45%;
+  top: 38%;
 }
 
 /* 13페이지 */
 .story-text[data-page="13"] {
   left: 9%;
   right: 8%;
-  top: 65%;
+  top: 17%;
 }
 
 /* 14페이지 */
 .story-text[data-page="14"] {
   left: 8%;
   right: 8%;
-  top: 29%;
+  top: 16%;
 }
 
 /* 15페이지 */
 .story-text[data-page="15"] {
-  left: 8%;
-  right: 8%;
-  bottom: 10%;
+  left: 3%;
+  right: 1%;
+  top: 2%;
+  text-align: right;
 }
 
 
